@@ -1,0 +1,38 @@
+model:
+  base_learning_rate: 0.0625
+  target: morph.models.taming.models.cond_transformer.Net2NetTransformer
+  params:
+    first_stage_key: image
+    transformer_config:
+      target: morph.models.taming.modules.transformer.mingpt.GPT
+      params:
+        vocab_size: 16384
+        block_size: 287
+        ori_block_size: 256
+        n_layer: 48
+        n_head: 24
+        n_embd: 1536
+    first_stage_config:
+      target: morph.models.taming.models.vqgan.VQModel
+      params:
+        embed_dim: 256
+        n_embed: 16384
+        ddconfig:
+          double_z: false
+          z_channels: 256
+          resolution: 256
+          in_channels: 3
+          out_ch: 3
+          ch: 128
+          ch_mult:
+          - 1
+          - 1
+          - 2
+          - 2
+          - 4
+          num_res_blocks: 2
+          attn_resolutions:
+          - 16
+          dropout: 0.0
+        lossconfig:
+          target: morph.models.taming.modules.losses.DummyLoss

@@ -1,0 +1,29 @@
+model:
+  arch: morph_mllm
+  model_type: morph
+  set_taming: True
+  max_txt_len: 600
+  end_sym: '###'
+  low_resource: false
+  prompt_template: 'USER: {}ASSISTANT:'
+  lora_r: 64
+  lora_alpha: 16
+  ckpt: 'PATH_FOR_MORPH.PTH'
+
+
+datasets:
+  coco:
+    vq_vis_processor:
+      train:
+        name: vqgan_image
+        image_size: 256
+    vis_processor:
+      train:
+        name: blip2_image_train
+        image_size: 224
+    text_processor:
+      train:
+        name: blip_caption
+
+run:
+  task: image_text_pretrain

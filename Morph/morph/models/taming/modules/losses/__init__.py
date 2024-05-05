@@ -1,0 +1,1 @@
+from morph.models.taming.modules.losses.vqperceptual import DummyLoss

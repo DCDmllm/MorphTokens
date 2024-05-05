@@ -1,0 +1,10 @@
+datasets:
+  coco:
+    data_type: images
+    build_info:
+      annotations:
+        train:
+          url: /home/theia/data/json/other/coco.json
+          storage: /home/theia/data/json/other/coco.json
+      images:
+        storage: /
