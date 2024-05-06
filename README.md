@@ -37,5 +37,12 @@ Thanks to the open source of the following projects:
 
 If you found this work useful, please consider citing our paper as follows:
 ```bibtex
-
+@misc{pan2024autoencoding,
+      title={Auto-Encoding Morph-Tokens for Multimodal LLM}, 
+      author={Kaihang Pan and Siliang Tang and Juncheng Li and Zhaoyu Fan and Wei Chow and Shuicheng Yan and Tat-Seng Chua and Yueting Zhuang and Hanwang Zhang},
+      year={2024},
+      eprint={2405.01926},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
