@@ -8,7 +8,9 @@ Kaihang Pan<sup>1</sup>, Siliang Tang<sup>1</sup>, Juncheng Li<sup>1,2&dagger;</
 
 <sup>1</sup>Zhejiang University, <sup>2</sup>National University of Singapore, <sup>3</sup>Skywork AI, <sup>4</sup>Nanyang Technological University
 
-<sup>&dagger;</sup>Corresponding Authors
+<sup>&dagger;</sup>Corresponding Author
+
+<a href='https://arxiv.org/abs/2405.01926'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
 
 
 
